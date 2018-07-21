@@ -1,0 +1,13 @@
+<!--pages/index/index-scrawl/bmobpics.wxml-->
+<view class="container" id="container">
+  <view class="page-body">
+    <view class="title">
+      <text class="titletext">网络涂鸦库</text>
+    </view>
+    <view class="pics">
+      <block wx:for="{{pics}}" wx:key="pics">
+        <image class="bpics" src="{{item}}" />>
+      </block>
+    </view>
+  </view>
+</view>

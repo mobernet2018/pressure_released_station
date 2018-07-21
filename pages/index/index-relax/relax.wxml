@@ -1,0 +1,11 @@
+<!--pages/index/index-relax/relax.wxml-->
+<view class='view1'>
+  <text class='text1'>放松解压</text>
+</view>
+<view class='view2'>
+  <canvas canvas-id="myCanvas" class="myCanvas" ></canvas>
+</view>
+<view class='view3'>
+  <button size='mini' class='button1' disabled='{{disabled}}'  bindtap='changeR'>开始</button>
+  <button size='mini' class='button2' disabled='{{!disabled}}' bindtap='changeS'>停止</button>
+</view>

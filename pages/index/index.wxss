@@ -1,0 +1,88 @@
+page {
+  background-color: #f3f3f3;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.page-body{
+  padding-top: 60rpx;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+.page-section-spacing{
+  box-sizing: border-box;
+  padding: 0 80rpx;
+}
+.slide-image{
+  border-radius:15px;
+  width: 590rpx;
+  height: 350rpx;
+}
+swiper{
+  border-radius:15px;
+  width: 590rpx;
+  height: 350rpx;
+}
+.text{
+  position: relative;
+  text-align: center;
+}
+.text-mongji{
+  font-family: "宋体";
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.relax-image{
+  position: relative;
+  width: 170rpx;
+  height: 170rpx;
+  left: 150rpx;
+}
+.violence-image{
+  position: relative;
+  width: 180rpx;
+  height: 180rpx;
+  left: 260rpx;
+}
+.pour-image{
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  left: 150rpx;
+}
+.scrawl-image{
+  position: relative;
+  width: 180rpx;
+  height: 180rpx;
+  left: 260rpx;
+}
+.relax-mongji{
+  font-family: "宋体";
+  font-weight: bold;
+  font-size: 32rpx;
+  position: relative;
+  left: 175rpx;
+}
+.violence-mongji{
+  font-family: "宋体";
+  font-weight: bold;
+  font-size: 32rpx;
+  position: relative;
+  left: 330rpx;
+}
+.pour-mongji{
+  font-family: "宋体";
+  font-weight: bold;
+  font-size: 32rpx;
+  position: relative;
+  left: 145rpx;
+}
+.scrawl-mongji{
+  font-family: "宋体";
+  font-weight: bold;
+  font-size: 32rpx;
+  position: relative;
+  left: 250rpx;
+}

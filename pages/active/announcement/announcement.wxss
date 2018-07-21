@@ -1,0 +1,42 @@
+/* pages/active/announcement/announcement.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.page-body{
+  left: 50rpx;
+  top: 30rpx;
+  width: 670rpx;
+}
+.title{
+  font-size: 45rpx;
+  font-weight: bold;
+  position: relative;
+  left: 80rpx;
+  top: 30rpx;
+}
+.writer{
+  font-size: 35rpx;
+  font-weight: bold;
+  position: relative;
+  left: 530rpx;
+  top: 30rpx;
+}
+.article1{
+  font-size: 35rpx;
+  position: relative;
+  left: 50rpx;
+  top: 50rpx;
+}
+.stress{
+  position: relative;
+  width: 670rpx;
+  height: 440rpx;
+  left: 50rpx;
+  top: 30rpx;
+}
+.article2{
+  font-size: 35rpx;
+  position: relative;
+  left: 50rpx;
+  top: 20rpx;
+}

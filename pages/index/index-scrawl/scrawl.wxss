@@ -1,0 +1,148 @@
+/* pages/index/index-scrawl/scrawl.wxss */
+page {
+  background-color: #f3f3f3;
+}
+.mongji{
+  position: relative;
+  top: 20rpx;
+  bottom: 10rpx;
+}
+.title{
+  position:relative;
+  font-size:45rpx;
+  font-weight: bold;
+  left:280rpx;
+}
+.buttonGroup1{
+  position: relative;
+  top:40rpx;
+  bottom: 50rpx;
+  left: 20rpx;
+}
+.save{
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+  left:60rpx; 
+}
+.upload{
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+  left:45px; 
+}
+.view{
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+  left:126rpx; 
+}
+.save-mongji{
+  position: relative;
+  font-family: "宋体";
+  font-size: 32rpx;
+  left: 70rpx;
+  bottom: 15rpx;
+}
+.upload-mongji{
+  position: relative;
+  font-family: "宋体";
+  font-size: 32rpx;
+  left: 105rpx;
+  bottom: 15rpx;
+}
+.view-mongji{
+  position: relative;
+  font-family: "宋体";
+  font-size: 32rpx;
+  left: 140rpx;
+  bottom: 15rpx;
+}
+
+.huabu{
+  position: relative;
+  border: solid #000000 1rpx;
+  height:845rpx;
+  width:635rpx;
+  left:50rpx;
+  top:50rpx;
+}
+.buttonGroup2{
+  position: relative;
+  top: 70rpx;
+}
+.pencil{
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+  left: 65rpx;
+}
+.thiki{
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  left: 165rpx;
+}
+.eraser{
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  left: 265rpx;
+}
+.throwaway{
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  left: 365rpx;
+}
+.mycanvas{
+  background-color: #ffffff;
+  height:845rpx;
+  width:635rpx;
+}
+.config{
+  position: relative;
+  top: 150rpx;
+}
+.thikitext{
+  position: relative;
+  top: 30rpx;
+  left: 50rpx;
+  font-size: 40rpx;
+}
+.thikiconfig{
+  position: relative;
+  top: 50rpx;
+}
+.colortext{
+  position: relative;
+  top: 80rpx;
+  left:50rpx;
+  font-size: 40rpx;
+}
+.colorshow{
+  position: relative;
+  top: 110rpx;
+  left: 300rpx;
+  width: 150rpx;
+  height: 30rpx;
+  border: solid #ffffff 1rpx;
+  border-radius: 15rpx;
+}
+.colorconfig{
+  position: relative;
+  top: 130rpx;
+}
+.commodity_screen {
+  width: 100%;
+  height: 1020rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+

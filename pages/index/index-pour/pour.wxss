@@ -1,0 +1,155 @@
+/* pages/index/index-pour/pour.wxss */
+page {
+  background-color: #f3f3f3;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:48rpx;
+  font-weight:bold;
+  background-color: #f3f3f3;
+}
+.nav{
+  width:1200rpx;
+  height:100rpx;
+  display:flex;
+  flex-direction:row;
+}
+.default{
+  background-color: #f3f3f3;
+  line-height:100rpx;
+  text-align:center;
+  flex:1;
+  border-bottom:1px solid gainsboro;
+  color:#4A4A4A;
+  font-size:35rpx;
+}
+.red{
+  line-height:100rpx;
+  text-align:center;
+  color:#87cefa;
+  flex:1;
+  border-bottom:1px solid gainsboro;
+  border-bottom-color: #87cefa;
+  font-weight:bold;
+  font-size:35rpx;
+}
+.index_list {
+  color: #666;
+  padding-top: 20rpx;
+}
+
+navigator {
+  background: #fff;
+  margin-bottom: 30rpx;
+  padding: 40rpx 40rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #ededee;
+  border-top: 1px solid #ededee;
+}
+
+
+.list_header view {
+  float: left;
+  line-height: 80rpx;
+  color: #1e1e1e;
+  font-size: 16px;
+}
+
+.list_header  .list_header_right {
+  float: right;
+  color: #999;
+  font-size: 12px;
+}
+
+.list_header {
+  padding-bottom: 18rpx;
+  overflow: hidden;
+}
+
+.listPic {
+  width: 100%;
+  height: 360rpx;
+  margin-bottom: 16rpx;
+}
+
+.listTitle {
+  font-size: 18px;
+  color: #1e1e1e;
+  margin-bottom: 16rpx;
+}
+
+.listContent {
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #646464;
+  font-size: 16px;
+  margin-bottom: 16rpx;
+  max-height: 36px;
+}
+
+.list_footer {
+  float: right;
+  overflow: hidden;
+  height: 60rpx;
+  line-height: 81rpx;
+  margin-top: -8px;
+}
+
+.list_footer view {
+  float: left;
+  padding-left: 44rpx;
+  padding-right: 16rpx;
+  background: url(http://bmob-cdn-20484.b0.upaiyun.com/2018/07/17/a7dbb943401c32fb80919eb122baca4c.png) no-repeat left 18rpx;
+  background-size: 44rpx auto;
+  color: #999;
+}
+
+.list_footer .commNum {
+  background-image: url(http://bmob-cdn-7744.b0.upaiyun.com/2016/12/19/bacf864040f3043d80b186e5af144b1c.png);
+}
+
+.list_footer .agree_1 {
+  background-image: url(http://bmob-cdn-20484.b0.upaiyun.com/2018/07/17/7660ae734073da2c80d0f8fb35d43d65.png);
+  color: #c0935b;
+}
+
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: #000;
+}
+.returnTop{
+  width:100rpx;
+  height: 100rpx;
+  background: url(http://bmob-cdn-7744.b0.upaiyun.com/2017/01/14/6bc44b6b40bde3ca803dca4dd101cba0.png) no-repeat;
+  padding: 0;
+  background-size: cover;
+  position: fixed;
+  right: 74rpx;
+  bottom: 100rpx;
+  border-bottom: 0;
+  border-top: 0;
+}
+.toWrite {
+  width: 100rpx;
+  height: 100rpx;
+  background: url(http://bmob-cdn-7744.b0.upaiyun.com/2016/11/29/360d32564024a5ab80e4477169949473.png) no-repeat;
+  padding: 0;
+  background-size: cover;
+  position: fixed;
+  right: 74rpx;
+  bottom: 100rpx;
+  border-bottom: 0;
+  border-top: 0;
+}

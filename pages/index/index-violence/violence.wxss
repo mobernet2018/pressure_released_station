@@ -1,0 +1,121 @@
+/* pages/index/index-violence/violence.wxss */
+page {
+  background-color: #f3f3f3;
+}
+.mongji{
+  position: relative;
+  top: 20rpx;
+  bottom: 10rpx;
+}
+.title{
+  position:relative;
+  font-size:45rpx;
+  font-weight: bold;
+  left:280rpx;
+}
+.gamecanvas{
+  position: relative;
+  background: linear-gradient(
+    to right, skyblue 0%, #333333 4.17%, #333333 12.5%, skyblue 16.67%,
+    #333333 20.83%, #333333 29.17%, skyblue 33.33%, #333333 37.5%, 
+    #333333 45.83%, skyblue 50%, #333333 54.17%, #333333 62.5%, 
+    skyblue 66.67%, #333333 70.83%, #333333 79.17%, skyblue 83.33%,
+    #333333 87.5%, #333333 95.83%, skyblue 100%
+  );
+  border: solid skyblue 1rpx;
+  height:900rpx;
+  width:635rpx;
+  left:54rpx;
+  top:47rpx;
+  opacity: 1
+}
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 1rpx;
+  opacity: 0.5;
+  background-color: skyblue;
+}
+.line{
+  position: absolute;
+  height: 196rpx;
+  background-color: #00ffff;
+  width: 99.1%;
+  top: 700rpx;
+  left: -0.5rpx;
+  border: inset #00ffff 5rpx;
+  border-radius: 1rpx;
+  opacity: 0.7;
+  background: linear-gradient(
+    to right, #00ffff 0%, #88ffff 4.17%, #88ffff 12.5%, #00ffff 16.67%,
+    #88ffff 20.83%, #88ffff 29.17%, #00ffff 33.33%, #88ffff 37.5%, 
+    #88ffff 45.83%, #00ffff 50%, #88ffff 54.17%, #88ffff 62.5%, 
+    #00ffff 66.67%, #88ffff 70.83%, #88ffff 79.17%, #00ffff 83.33%,
+    #88ffff 87.5%, #88ffff 95.83%, #00ffff 100%
+  );
+}
+.innerline{
+  position: relative;
+  height: 1rpx;
+  width: 99.1%;
+  top: 98rpx;
+  border-top: dotted #000000 1rpx;
+}
+/* 节奏点图形doge动画 */
+.ani{
+  width: 180rpx;
+  height: 180rpx;
+  position: absolute;
+  animation-name: gouzi;
+  animation-duration: 1346ms;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes gouzi{
+    0% {top:-900rpx; opacity: 0}
+    50%{top: -60rpx; opacity: 0}
+    51%{top: -44rpx; opacity: 1}
+    100% {top:780rpx; opacity: 1}
+}
+/*为循环执行ani动画做中转的动画*/
+.anime{
+  position: absolute;
+  height: 180rpx;
+  width: 180rpx;
+  animation-name: doge;
+  animation-duration: 1346ms;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes doge{
+  0%    {top:-900rpx; opacity: 0}
+  100%  {top:-900rpx; opacity: 0}
+}
+.button{
+  position: relative;
+  top: 60rpx;
+}
+.start{
+  position: relative;
+  top:30rpx;
+  left:175rpx;
+  background-color: skyblue;
+}
+.endgame{
+  position: relative;
+  top:30rpx;
+  left:225rpx;
+  background-color: skyblue;
+}
+.score{
+  position: absolute;
+  top: 40rpx;
+  left: 600rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  font-style: "#87CEEB"
+}

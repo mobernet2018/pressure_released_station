@@ -1,0 +1,54 @@
+/* pages/about/suggestion/suggestion.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.title{
+  position: relative;
+  top: 30rpx;
+}
+.titletext{
+  position: relative;
+  font-size: 45rpx;
+  font-weight: bold;
+  left: 220rpx;
+}
+.zhuti{
+  position: relative;
+  top:50rpx;
+}
+.zhutitext{
+  position: relative;
+  font-size: 35rpx;
+  left: 30rpx;
+}
+.zhutiinput{
+  position: relative;
+  margin: 10rpx 50rpx 10rpx 50rpx;
+  background-color: #ffffff;
+  border: solid #000000 1rpx;
+}
+.content{
+  position: relative;
+  top:50rpx;
+}
+.contenttext{
+  position: relative;
+  font-size: 35rpx;
+  left:30rpx;
+}
+.contentinput{
+  position: relative;
+  margin: 10rpx 50rpx 10rpx 50rpx;
+  width: 645rpx;
+  height: 700rpx;
+  background-color: #ffffff;
+  border: solid #000000 1rpx;
+}
+.tijiao{
+  position: relative;
+  top: 60rpx;
+}
+.upload{
+  position: relative;
+  left:300rpx;
+}

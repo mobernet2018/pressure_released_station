@@ -1,0 +1,38 @@
+<!--pages/index/index-pour/pour.wxml-->
+<view><text class="title">倾述&吐槽解压</text></view>
+<view><scroll-view scroll-x="true"><view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="show_pour_latest">最新倾诉</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="show_tucao_latest">最新吐槽</view>
+    <view class="{{selected2?'red':'default'}}" bindtap="show_pour_like">关注倾诉</view>
+    <view class="{{selected3?'red':'default'}}" bindtap="show_tucao_like">关注吐槽</view>
+    <view class="{{selected4?'red':'default'}}" bindtap="show_pour_mine">我的倾诉</view>
+    <view class="{{selected5?'red':'default'}}" bindtap="show_tucao_mine">我的吐槽</view>
+  </view></scroll-view></view>
+
+<view class="index_list">
+  <navigator url="../../listDetail/listDetail?moodId={{item.id}}" hover-class="navigator-hover" wx:for-items="{{moodList}}" wx:key="id" wx:if="{{item.id}}">
+    <view class="list_header">
+        <view class="list_header_right">{{item.publishTime}}</view>
+    </view>
+    <view class="listTemp">
+      <image  mode="aspectFill" src="{{item.listPic}}" class="listPic" wx:if="{{item.listPic}}" bindtap="seeBig"></image>
+      <view class="listTitle" wx-if="{{item.listTitle!=''}}">{{item.listTitle}}</view>
+      <view class="listContent"><text>{{item.listContent}}</text></view>
+    </view>
+    <view class="list_footer">
+      <view class="agreeNum agree_{{item.is_liked}}">{{item.likes}}</view>
+      <view class="commNum">{{item.comments}}</view>
+    </view>
+  </navigator>
+</view>
+<view class="bord"></view>
+
+
+<view class="returnTop"  wx:if="{{scrollTop.goTop_show}}" catchtap="goTopFun">
+</view>
+<navigator class="toWrite" url="../../write/write" ></navigator>
+
+<view class="weui-loadmore" hidden="{{isload}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>

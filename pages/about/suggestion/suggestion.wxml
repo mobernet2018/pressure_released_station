@@ -1,0 +1,19 @@
+<!--pages/about/suggestion/suggestion.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="title">
+      <text class="titletext">意见与建议专栏</text>
+    </view>
+    <view class="zhuti">
+      <text class="zhutitext">主题（请您在框内填写您的建议的关键词）</text>
+      <input class="zhutiinput" bindinput="zhuti" />
+    </view>
+    <view class="content">
+      <text class="contenttext">您的意见或建议</text>
+      <textarea class="contentinput" placeholder="请详细说明您对本程序的意见或建议" bindinput="content"/>
+    </view>
+    <view class="tijiao">
+      <button class="upload" size='mini' bindtap="upload">提交</button>
+    </view>
+  </view>
+</view>

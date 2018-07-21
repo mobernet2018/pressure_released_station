@@ -1,0 +1,46 @@
+<!--pages/index/index-scrawl/scrawl.wxml-->
+<view class="container" id="container">
+  <view class="page-body">
+    <cover-view class="commodity_screen" wx:if="{{showModalStatus}}"></cover-view>
+    <view class="mongji">
+      <text class="title">涂鸦解压</text>
+    </view>
+    <view class="buttonGroup1">
+      <image src="../../../utils/icon/save.png" class="save" bindtap="save" ></image>
+      <text class='save-mongji' bindtap="save">保存涂鸦</text>
+      <image src="../../../utils/icon/upload.png" class="upload" bindtap="upload" ></image>
+      <text class='upload-mongji' bindtap="upload">上传涂鸦</text>
+      <image src="../../../utils/icon/view.png" class="view" bindtap="view" ></image>
+      <text class='view-mongji' bindtap="view">查看涂鸦</text>
+    </view>
+    <view class="huabu">
+      <canvas canvas-id="mycanvas" class="mycanvas" disable-scroll="true" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+      </canvas>
+    </view>
+    <view class="buttonGroup2">
+      <block wx:for="{{pencil}}" wx:key="img">
+        <image src="{{drawjustice==true? item.selected:item.noselected}}" class="pencil" bindtap="pencil" />
+      </block>
+      <block wx:for="{{item}}" wx:key="img">
+        <image src='{{scroll==false? item.thiki:item.thiki_selected}}' class="thiki" bindtap="thiki" />
+      </block>
+      <block wx:for="{{eraser}}" wx:key="img">
+        <image src="{{eraserjustice==true? item.selected:item.noselected}}" class="eraser" bindtap="eraser" />
+      </block>
+      <image src="../../../utils/icon/throw.png" class="throwaway" bindtap="throwaway" />
+    </view>
+    <view class="config">
+      <text class="thikitext">线的粗细</text>
+      <view class="thikiconfig">
+        <slider bindchange="thikichange" value="{{pen}}" min="1" max="30" show-value selected-color="#333333" />
+      </view>
+      <text class="colortext">线的颜色</text>
+      <view class="colorshow" id="colorshow" style="background: {{'rgb(' + r + ', ' + g + ', ' + b + ')'}};"></view>
+      <view class="colorconfig">
+        <slider bindchange="redchange" bindchanging="redchanging" value="{{r}}" min="0" max="255" selected-color="#ff0000" show-value />
+        <slider bindchange="greenchange" bindchanging="greenchanging" value="{{g}}" min="0" max="255" selected-color="#00ff00" show-value />
+        <slider bindchange="bluechange" bindchanging="bluechanging" value="{{b}}" min="0" max="255" selected-color="#0000ff" show-value />
+      </view>
+    </view>
+  </view>
+</view>

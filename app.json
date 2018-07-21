@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/active/announcement/announcement",
+    "pages/listDetail/listDetail",
+    "pages/about/about",
+    "pages/about/suggestion/suggestion",
+    "pages/about/explain/explain",
+    "pages/index/index-relax/relax",
+    "pages/index/index-violence/violence",
+    "pages/index/index-pour/pour",
+    "pages/index/index-scrawl/scrawl",
+    "pages/index/index-scrawl/bmobpics",
+    "pages/write/write"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87cefa",
+    "navigationBarTitleText": "压力疏解小栈",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#87cefa",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "big": "20pt",
+        "iconPath": "utils/icon/首页.png",
+        "selectedIconPath": "utils/icon/已勾选.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "utils/icon/我的.png",
+        "selectedIconPath": "utils/icon/已勾选.png"
+      }
+    ]
+  }
+}

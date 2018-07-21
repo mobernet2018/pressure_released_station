@@ -1,0 +1,26 @@
+<!--pages/index/index-violence/violence.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="mongji">
+      <text class="title">暴力解压</text>
+    </view>
+    <view class="scoreview">
+      <text class="score">{{score}}</text>
+    </view>
+    <view class="gamecanvas">
+      <view class="cover"></view>
+      <view class="line">
+        <view class="innerline"></view>
+      </view>
+      <block wx:for="{{left}}" wx:if="{{donghua}}" wx:key="img" >
+        <view class='donghua'>
+      <image bindtap='doge' style='left:{{item.distance}}rpx; animation-play-state:{{item.playstate}}' class='{{item.class}}' id='{{item.id}}' src='../../../utils/image/doge.png' bindanimationend="end"></image>
+    </view>
+</block>
+    </view>
+    <view class="button">
+      <button class="start" size="mini" disabled='{{disabled}}' bindtap="startgame">开始挑战</button>
+      <button class="endgame" size="mini" disabled='{{!disabled}}' bindtap="endgame">停止游戏</button>
+    </view>
+  </view>
+</view>

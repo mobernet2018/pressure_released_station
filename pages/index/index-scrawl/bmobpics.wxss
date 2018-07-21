@@ -1,0 +1,28 @@
+/* pages/index/index-scrawl/bmobpics.wxss */
+page {
+  background-color: #f3f3f3;
+}
+.title{
+  position: relative;
+  top: 30rpx;
+  bottom: 30rpx;
+}
+.titletext{
+  position: relative;
+  left: 280rpx;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.pics{
+  position: relative;
+  top: 60rpx;
+}
+.bpics{
+  position: relative;
+  top: 30rpx;
+  bottom:30rpx;
+  left:50rpx;
+  right:30rpx;
+  width: 42%;
+  border: solid #000000 1rpx;
+}

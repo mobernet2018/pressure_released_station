@@ -1,0 +1,42 @@
+/* pages/index/index-relax/relax.wxss */
+page {
+  background-color: #f3f3f3;
+}
+.view1{
+  position: relative;
+  text-align: center;
+  margin: 60rpx 0rpx 30rpx 0rpx;
+}
+.text1{
+  font-weight: bold;
+  font-size: 45rpx;  
+  color: #000000;
+  text-align: center;
+}
+.view2{
+  width: 580rpx;
+  height: 700rpx;
+  border: solid #888888 0rpx;
+  position:relative;
+  margin:70rpx 90rpx 0rpx 90rpx;
+}
+.myCanvas{
+  border: solid #000000 0rpx;
+  width: 580rpx;
+  height: 700rpx;
+  position:relative;    
+}
+.button1{
+  position: relative;
+  left:220rpx;
+  top:80rpx;
+  background-color: #00FF00;
+  color: #ffffff;
+}
+.button2{
+  position: relative;
+  left:300rpx;
+  top:80rpx;
+  background-color: #00FF00;
+  color: #ffffff;
+}

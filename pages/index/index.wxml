@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper"> <!-- 设置swiper滑块 -->
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{array}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item.background}}" data-url="{{item.desti_url}}" class="slide-image" bindtap="clickswiper" width="355" height="150"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="text">                                     <!-- 设置文本 -->
+      <text class="text-mongji">{{mongji}}</text>
+    </view>
+    <view class="buttonGroup">
+      <image src="{{relax}}" class="relax-image" bindtap="relaxpage" />
+      <image src="{{violence}}" class="violence-image" bindtap="violencepage" />
+      <view>\n</view>
+      <text class="relax-mongji">{{relaxMongji}}</text>
+      <text class="violence-mongji">{{violenceMongji}}</text>
+      <view>\n</view>
+      <image src="{{pour}}" class="pour-image" bindtap="pourpage" />
+      <image src="{{scrawl}}" class="scrawl-image" bindtap="scrawlpage" />
+      <view>\n</view>
+      <text class="pour-mongji">{{pourMongji}}</text>
+      <text class="scrawl-mongji">{{scrawlMongji}}</text>
+    </view>
+  </view>
+</view>

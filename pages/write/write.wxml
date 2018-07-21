@@ -1,0 +1,25 @@
+<loading hidden="{{loading}}">
+  页面初始化中...
+</loading>
+
+<view class="body">
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="release_pour">倾诉</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="release_tucao">吐槽</view>
+  </view>
+</view>
+<form bindsubmit="sendNewMood" >    
+    <input placeholder="输入标题（选）"  class="add_title" value=""  bindinput="setTitle" name="title"/>
+    <view  class="addConent" style="padding-top:20rpx;">
+        <textarea  placeholder="要说点什么？" maxlength="1000"  value="" name="content"/>
+    </view>
+    <view class="add_pic" bindtap="uploadPic" wx-if="{{!isSrc}}">
+      <image class="pic1" src="http://bmob-cdn-20484.b0.upaiyun.com/2018/07/18/bc786dea4012212b80fa440091c77426.PNG"></image>
+    </view>
+    <view class="add_pic" wx:if="{{isSrc}}" class="image_box">
+        <view  class="picPre" bindtap="clearPic">
+            <image class="pic1" src="{{src}}"  mode="aspectFill"></image>
+        </view>
+    </view>
+  <button loading="{{isLoading}}" hover-start-time="200" disabled="{{isdisabled}}" formType="submit">发布</button>
+</form>
